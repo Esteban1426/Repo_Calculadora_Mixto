@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity2 : AppCompatActivity() {
 
-    private lateinit var numero: TextView
-    private lateinit var resultado: TextView
+    lateinit var numero: TextView
+    lateinit var resultado: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

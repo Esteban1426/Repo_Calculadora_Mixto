@@ -13,9 +13,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     
 
-    private TextView mensaje;
-    private EditText v1;
-    private EditText v2;
+    TextView mensaje;
+    EditText v1;
+    EditText v2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         mensaje.setText("El resultado es: " + resultado);
     }
 
-    private long calcularPotencia(long base, long exponente) {
+    public long calcularPotencia(long base, long exponente) {
         if (exponente == 0) {
             return 1;
         } else if (exponente < 0) {
